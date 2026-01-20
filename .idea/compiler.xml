@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-a" />
+        <module name="common-events" />
+        <module name="spring-cloud-starter-bus-emqx" />
+        <module name="demo-b" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common-events" options="-parameters" />
+      <module name="demo-a" options="-parameters" />
+      <module name="demo-b" options="-parameters" />
+      <module name="spring-cloud-starter-bus-emqx" options="-parameters" />
+    </option>
+  </component>
+</project>
